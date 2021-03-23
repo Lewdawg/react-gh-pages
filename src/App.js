@@ -31,7 +31,11 @@ function App() {
 
         <Navbar login={login} setLogin={setLogin} />
 
-        <Home />
+        <Switch>
+
+          <Route exact to='/' component={Home} />
+
+        </Switch>
 
         {/* <Switch>
 
