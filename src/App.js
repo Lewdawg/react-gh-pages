@@ -33,7 +33,7 @@ function App() {
 
         <Switch>
 
-          <Route exact to='/' component={Home} />
+          <Route exact to='/react-gh-pages' component={Home} />
           {/* <Home exact path='/' /> */}
 
           <About path='/about' />
