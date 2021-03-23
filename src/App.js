@@ -31,10 +31,12 @@ function App() {
 
         <Navbar login={login} setLogin={setLogin} />
 
-        <Switch>
+        <Home />
 
-          <Route exact to='/react-gh-pages' component={Home} />
-          {/* <Home exact path='/' /> */}
+        {/* <Switch>
+
+          <Route exact to='/' component={Home} />
+           <Home exact path='/' /> 
 
           <About path='/about' />
 
@@ -47,7 +49,7 @@ function App() {
           <SignUp path='/signUp' setLogin={setLogin} />
           <Login path='/login' setLogin={setLogin} />
 
-        </Switch>
+        </Switch> */}
 
       </BrowserRouter>
 
