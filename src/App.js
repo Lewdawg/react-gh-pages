@@ -33,7 +33,9 @@ function App() {
 
         <Switch>
 
-          <Home exact path='/' />
+          <Route exact to='/' component={Home} />
+          {/* <Home exact path='/' /> */}
+
           <About path='/about' />
 
           <ProtectRoute exact path='/products' component={Products} />
