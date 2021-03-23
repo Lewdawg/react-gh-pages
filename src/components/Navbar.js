@@ -1,4 +1,4 @@
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useHistory, Route } from 'react-router-dom';
 
 const Navbar = ({ login, setLogin }) => {
 
@@ -18,17 +18,17 @@ const Navbar = ({ login, setLogin }) => {
             <div className="links">
 
                 {/* How we write react links */}
-                <Link to="/">Home</Link>
+                <Route><Link to="/">Home</Link></Route>
 
-                <Link to="/about">About</Link>
+                <Route><Link to="/about">About</Link></Route>
 
-                <Link to="/products">Products</Link>
+                <Route><Link to="/products">Products</Link></Route>
 
-                {login && <Link to='/addProduct'>Add Product</Link>}
+                {login && <Route><Link to='/addProduct'>Add Product</Link></Route>}
 
-                {!login && <Link to="/login">Login</Link>}
+                {!login && <Route><Link to="/login">Login</Link></Route>}
 
-                {!login && <Link to="/signUp">Sign Up</Link>}
+                {!login && <Route><Link to="/signUp">Sign Up</Link></Route>}
 
                 {login && <button id='button' onClick={logOut} value='Log Out'>Log Out</button>}
 
