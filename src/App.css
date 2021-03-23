@@ -1,38 +1,219 @@
-.App {
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #f1356d;
+}
+
+/* Navbar */
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar h1{
+  font-size: 2rem;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  font-size: 1.3rem;
+}
+.navbar a:hover {
+  color: black;
+}
+
+/* LOGOUT BUTTON */
+.navbar button {
+background-color: white;
+border: 2px solid #f1355d;
+border-radius: 5px;
+font-size: 1.2rem;
+margin-left: 1.2rem;
+}
+button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+
+
+/* .content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+} */
+
+
+
+
+/* Product previews/list */
+.product-preview {
+  font-size: 1.5rem;
+  padding: 10px 16px;
+  margin: 30px auto;
+  border-bottom: 1px solid #f1356d;
+  max-width: 300px;
+}
+
+.product-preview:hover {
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 1);
+}
+
+.product-preview a {
+  text-decoration: none;
+}
+
+
+
+
+/* PRODUCT details page */
+.product-details {
+  /* text-align: center; */
+  color: #fff;
+  padding: 4% 4% 1% ;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.product-details h3 {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-decoration: underline #f1356d;
+}
+
+
+.product-details h4 {
+  margin: 2rem 5px;
+  font-size: 1.7rem;
+}
+
+.product-details h4 p {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: black;
+}
+
+/* Back button on closer details */
+.product-details .back {
+  color: white;
+  background-color: #f1355d;
+  border-radius: 5px;
+  margin-top: 1%;
+  padding: 8px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.product-details .back:hover {
+  color: black;
+}
+
+
+
+
+/* PAGE HEADERS */
+.title {        
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title h1 {               
+  /* color: #f1356d; */
+  margin: 30px 0;
+  font-size: 3.5rem;
+  text-decoration: underline black;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Home */
+.title h2 {
+  color: #f1356d;
+  margin: 4rem;
+  font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title .homeLogo {
+  text-decoration: none;
+}
+
+.title img {
+  margin: 2rem;
+}
+
+
+/* About Page */
+.title p {
+  font-size: 1.5rem;
+  margin: 4rem;
+}
+
+
+/* FORMS */
+form {
+  margin: 3% ;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+form input {
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  width: 40%;
+  
+}
+
+/* form label {
+  margin-top: .5rem;
+} */
+
+form textarea {
+  font-size: 1.5rem;
+  width: 50%;
+  margin: auto;
+}
+
+.title h3 {
+  font-size: 1.8rem;
+  margin: 3rem;
+}
+
+form button {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  background-color: #f1355d;
+  border: 2px solid #f1355d;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  margin: 2rem auto;
+  padding: .8rem 2rem;
+  width: 40%;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* FOOTER */
+  footer {
+    font-size: 1.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    background-color: #f1356d;
+    color: white;
+    text-align: center;
+    margin: auto;
   }
-}
