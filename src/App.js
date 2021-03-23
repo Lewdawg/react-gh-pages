@@ -35,6 +35,22 @@ function App() {
 
           <Route exact to='/' component={Home} />
 
+          <Route path='/about' component={About} />
+
+          <ProtectRoute exact path='/products' component={Products} />
+
+          <ProtectRoute exact path='/products/:id' component={ProductDetails} />
+
+          <ProtectRoute exact path='/addProduct' component={AddProduct} />
+
+          <Route path='/signUp'>
+            <SignUp setLogin={setLogin} />
+          </Route>
+
+          <Route path='/login'>
+            <Login setLogin={setLogin} />
+          </Route>
+
         </Switch>
 
         {/* <Switch>
