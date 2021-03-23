@@ -18,7 +18,7 @@ const Navbar = ({ login, setLogin }) => {
             <div className="links">
 
                 {/* How we write react links */}
-                <Link to="/react-gh-pages">Home</Link>
+                <Link to="/">Home</Link>
 
                 <Link to="/about">About</Link>
 
