@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={"/react-gh-pages"}>
 
         <Navbar login={login} setLogin={setLogin} />
 
