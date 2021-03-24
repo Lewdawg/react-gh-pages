@@ -12,7 +12,6 @@ const SignUp = ({ setLogin }) => {
 
 
     const newSubmit = (e) => {
-
         e.preventDefault();
 
         const newUser = {

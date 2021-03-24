@@ -12,14 +12,10 @@ const AddProduct = () => {
     const [description, setDescription] = useState('');
     const [price, setPrice] = useState('');
 
+    //After new product details are submitted, send post request.
 
     const newItem = (e) => {
-        //console.log({ artNo, name, description, price })
         e.preventDefault();
-
-
-        //const randNo = Math.floor(Math.random() * 100)
-        // "id": randNo
 
         const newProduct = {
             method: 'POST',
@@ -29,7 +25,6 @@ const AddProduct = () => {
                 "name": name,
                 "description": description,
                 "price": price,
-
             }
         }
 

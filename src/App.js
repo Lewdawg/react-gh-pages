@@ -1,9 +1,10 @@
 import './App.css';
 
+//React Imports
 import { useState } from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
-
+//File Imports
 import Home from './components/Home.js';
 import Navbar from './components/Navbar.js'
 import Login from './components/Login.js';
@@ -15,9 +16,9 @@ import SignUp from './components/SignUp';
 
 
 
-
 function App() {
 
+  //Login in Access state & Function
   const [login, setLogin] = useState(false);
 
   const ProtectRoute = (props) => {
@@ -27,6 +28,8 @@ function App() {
 
   return (
     <div className="App">
+
+      {/* All Route get passed through and 'basename' before hand */}
       <BrowserRouter basename={"/react-gh-pages"}>
 
         <Navbar login={login} setLogin={setLogin} />
@@ -43,6 +46,7 @@ function App() {
 
           <ProtectRoute exact path='/addProduct' component={AddProduct} />
 
+          {/* Written differently because we pass a prop with the path */}
           <Route path='/signUp'>
             <SignUp setLogin={setLogin} />
           </Route>
@@ -52,23 +56,6 @@ function App() {
           </Route>
 
         </Switch>
-
-        {/* <Switch>
-
-          <Home exact path='/' />
-
-          <About path='/about' />
-
-          <ProtectRoute exact path='/products' component={Products} />
-
-          <ProtectRoute exact path='/products/:id' component={ProductDetails} />
-
-          <ProtectRoute exact path='/addProduct' component={AddProduct} />
-
-          <SignUp path='/signUp' setLogin={setLogin} />
-          <Login path='/login' setLogin={setLogin} />
-
-        </Switch> */}
 
       </BrowserRouter>
 
