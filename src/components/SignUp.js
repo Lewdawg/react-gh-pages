@@ -16,7 +16,7 @@ const SignUp = ({ setLogin }) => {
 
         const newUser = {
             method: 'POST',
-            url: 'http://localhost:4000/signUp',
+            url: 'https://thelaptopshop.herokuapp.com/signUp',
             data: {
                 "name": name,
                 "emailAddress": emailAddress,

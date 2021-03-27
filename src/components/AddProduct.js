@@ -19,7 +19,7 @@ const AddProduct = () => {
 
         const newProduct = {
             method: 'POST',
-            url: 'http://localhost:4000/addProduct',
+            url: 'https://thelaptopshop.herokuapp.com/addProduct',
             data: {
                 "articleNo": artNo,
                 "name": name,

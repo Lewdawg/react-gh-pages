@@ -17,7 +17,7 @@ const Login = ({ setLogin }) => {
 
         const config = {
             method: 'POST',
-            url: 'http://localhost:4000/login',
+            url: 'https://thelaptopshop.herokuapp.com/login',
             data: { loginEmail, password }
         }
 

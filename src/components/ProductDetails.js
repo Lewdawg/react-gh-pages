@@ -21,7 +21,7 @@ const ProductDetails = () => {
 
         const laptopData = {
             method: 'GET',
-            url: `http://localhost:4000/products/${id}`,
+            url: `https://thelaptopshop.herokuapp.com/products/${id}`,
         }
 
         axios(laptopData)
