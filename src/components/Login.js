@@ -35,7 +35,7 @@ const Login = ({ setLogin }) => {
 
 
     return (
-        <div>
+        <div className="title">
             <h1>Login</h1>
 
             <form onSubmit={checkSubmit}>
