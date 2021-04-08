@@ -1,5 +1,5 @@
 //import images from '../../images'
-import laptop from '../../images/laptop.png'
+import laptop from '../images/laptop.png'
 
 const Home = () => {
 
