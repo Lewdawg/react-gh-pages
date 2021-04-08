@@ -1,3 +1,5 @@
+//import images from '../../images'
+import laptop from '../../images/laptop.png'
 
 const Home = () => {
 
@@ -10,10 +12,10 @@ const Home = () => {
 
             <h2>Welcome to your one stop shop for all your <b>Laptops</b> wants and needs!</h2>
 
-            <img src="https://www.stevensegallery.com/300/300" alt="" />
-            <img src="http://www.fillmurray.com/300/300" alt="" />
-            <img src="https://www.stevensegallery.com/g/300/300" alt="" />
-            <img src="https://www.placecage.com/gif/300/300" alt="" />
+            <img src={laptop} alt="" />
+            <img src={laptop} alt="" />
+            <img src={laptop} alt="" />
+            <img src={laptop} alt="" />
 
         </div>
     );
