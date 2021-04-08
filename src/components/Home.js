@@ -12,10 +12,10 @@ const Home = () => {
 
             <h2>Welcome to your one stop shop for all your <b>Laptops</b> wants and needs!</h2>
 
-            <img src={laptop} alt="" />
-            <img src={laptop} alt="" />
-            <img src={laptop} alt="" />
-            <img src={laptop} alt="" />
+            <img src={laptop} alt="" height='150px' />
+            <img src={laptop} alt="" height='150px' />
+            <img src={laptop} alt="" height='150px' />
+            <img src={laptop} alt="" height='150px' />
 
         </div>
     );
