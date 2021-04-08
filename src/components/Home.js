@@ -16,6 +16,7 @@ const Home = () => {
             <img src={laptop} alt="" height='150px' />
             <img src={laptop} alt="" height='150px' />
             <img src={laptop} alt="" height='150px' />
+            <img src={laptop} alt="" height='150px' />
 
         </div>
     );
