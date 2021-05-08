@@ -19,7 +19,7 @@ import SignUp from './components/SignUp';
 
 function App() {
 
-  //Login in Access state & Function
+  //Login Access state & Function
   const [login, setLogin] = useState(false);
 
   const ProtectRoute = (props) => {
