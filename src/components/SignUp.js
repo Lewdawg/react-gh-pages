@@ -45,7 +45,7 @@ const SignUp = ({ setLogin }) => {
             <h3>Sign Up to our Website to see further details and special member ony deals!</h3>
 
             <form onSubmit={newSubmit}>
-                <label htmlFor="name">User's Name:</label>
+                <label htmlFor="name">User Name:</label>
                 <input type="text" id='userName' value={name} onChange={(e) => setUserName(e.target.value)} required />
 
                 <label htmlFor="email">Email Address:</label>
