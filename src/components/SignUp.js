@@ -51,7 +51,7 @@ const SignUp = ({ setLogin }) => {
                 <label htmlFor="email">Email Address:</label>
                 <input type="email" id='email' value={emailAddress} onChange={(e) => setEmailAddress(e.target.value)} required />
 
-                <label htmlFor="UserPassword">Password</label>
+                <label htmlFor="UserPassword">Password:</label>
                 <input type="password" id='Password' value={password} onChange={(e) => setPassword(e.target.value)} required />
 
                 <button type='submit' >Sign Up</button>
