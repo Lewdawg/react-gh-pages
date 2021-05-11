@@ -18,5 +18,3 @@
 
  - Products and User's details stored on cloud data base.
 
-
-
