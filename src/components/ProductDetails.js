@@ -13,10 +13,10 @@ const ProductDetails = () => {
         history.push('/Products')
     }
 
-
     const [clickedLaptop, setClickedLaptop] = useState({})
 
-    //After a certain product to clicked, new route fires off sending another request for more details
+
+    //After a certain product is clicked, new route fires off sending another request for more details
     useEffect(() => {
 
         const laptopData = {
